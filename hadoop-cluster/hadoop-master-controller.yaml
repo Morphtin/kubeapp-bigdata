@@ -1,0 +1,27 @@
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  name: hadoop-master
+  namespace: wyw
+spec:
+  replicas: 1
+  selector:
+    component: hadoop-master
+  template:
+    metadata:
+      labels:
+        component: hadoop-master
+    spec:
+      containers:
+        - name: hadoop-master
+          image: hadoop:2.7.6
+          command: ["/tmp/start-master-hadoop.sh"]
+          ports:
+            - containerPort: 3333
+            - containerPort: 8000
+            - containerPort: 8088
+            - containerPort: 50070
+          resources:
+            requests:
+              cpu: 100m
+              memory: 2000Mi
