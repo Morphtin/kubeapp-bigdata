@@ -1,4 +1,4 @@
-FROM openjdk:7
+FROM openjdk-sshd:7
 MAINTAINER wuyuewen@otcaix.iscas.ac.cn
 WORKDIR /root
 
