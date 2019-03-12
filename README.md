@@ -11,6 +11,5 @@ This project is a container-based "big data" computing tool. Supporting the crea
 
 ## Services
 1. For Spark cluster, we expose 8000, 7077 and 8080 for "terminal", "job submmit" and "web UI".
-2. For Hadoop cluster, we expose 8000, 9000, 19888 and 8088 for "terminal", "hdfs", "jobhistory" and "web UI".
-
-To check service ports in Kubernetes, please run `kubectl get services -n <namespace>`.
+2. For Hadoop cluster, we expose 8000, 9000, 19888 and 8088 for "terminal", "hdfs", "jobhistory" and "web UI".  
+3. To check service ports in Kubernetes, please run `kubectl get services -n <namespace>`.
