@@ -4,6 +4,7 @@ metadata:
   name: test-zeppelin
   namespace: test
 spec:
+  type: NodePort
   ports:
     - name: terminal
       port: 8000

@@ -13,7 +13,7 @@ spec:
         component: test-spark-master
     spec:
       securityContext:
-        runAsUser: 1003
+        runAsUser: 0
       containers:
         - name: test-spark-master
           image: nscc/spark:2.1.0

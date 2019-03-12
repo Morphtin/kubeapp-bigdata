@@ -13,7 +13,7 @@ spec:
         component: test-zeppelin
     spec:
       securityContext:
-        runAsUser: 1003
+        runAsUser: 0
       containers:
         - name: zeppelin
           image: nscc/zeppelin:0.7.2

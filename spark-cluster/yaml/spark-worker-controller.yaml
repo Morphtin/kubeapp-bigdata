@@ -13,7 +13,7 @@ spec:
         component: test-spark-worker
     spec:
       securityContext:
-        runAsUser: 1003
+        runAsUser: 0
       containers:
         - name: test-spark-worker
           image: nscc/spark:2.1.0
